@@ -1,0 +1,421 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon1.ico">
+  <link rel="icon" href="/img/favicon1.ico">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="everyone">
+  <meta name="keywords" content="">
+  
+  <title>nanyanxin_blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":70,"cursorChar":"","loop":true},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>NYX</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-09-08 17:02" pubdate>
+        2021年9月8日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      852 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      13
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none"></h1>
+            
+            <div class="markdown-body">
+              <p>1.两数相加（simple）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">package</span> Simple;<br><br><span class="hljs-keyword">import</span> java.util.HashMap;<br><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">s001</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;<br>        <span class="hljs-keyword">int</span> nums[] = &#123;<span class="hljs-number">2</span>, <span class="hljs-number">7</span>, <span class="hljs-number">11</span>, <span class="hljs-number">15</span>&#125;;<br>        <span class="hljs-keyword">int</span> target = <span class="hljs-number">9</span>;<br>        Solution solution = <span class="hljs-keyword">new</span> Solution();<br>        <span class="hljs-keyword">int</span> indexs[] = solution.twoSum(nums,target);<br>        System.out.println(<span class="hljs-string">&quot;[&quot;</span>+indexs[<span class="hljs-number">0</span>]+<span class="hljs-string">&quot;,&quot;</span>+indexs[<span class="hljs-number">1</span>]+<span class="hljs-string">&quot;]&quot;</span>);<br>    &#125;<br>    <span class="hljs-comment">/**</span><br><span class="hljs-comment">     * 算法思想：</span><br><span class="hljs-comment">     * 1.采用Hashmap，key存数组元素，value存数组元素对应下标</span><br><span class="hljs-comment">     * 2.遍历给定数组，判断哈希表键的集合中是否包含target-nums[i]，即hs.containsKey(target-nums[i])</span><br><span class="hljs-comment">     * 3.如果为false，说明没找到两数相加得目标值target的数组元素，则将该遍历到的数组元素加入哈希表中</span><br><span class="hljs-comment">     * 4.如果为true，说明找到了，即遍历到的数组元素a[i]和目标值target-a[i]（在哈希表中），将对应的数组下标取出即可。</span><br><span class="hljs-comment">     */</span><br>    <span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>        <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span>[] twoSum(<span class="hljs-keyword">int</span>[] nums, <span class="hljs-keyword">int</span> target) &#123;<br>            HashMap&lt;Integer, Integer&gt; hs = <span class="hljs-keyword">new</span> HashMap&lt;&gt;();<br>            <span class="hljs-keyword">int</span> index[] = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">2</span>];<br>            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i =<span class="hljs-number">0</span>;i&lt; nums.length;i++)&#123;<br>                <span class="hljs-keyword">if</span> (hs.containsKey(target-nums[i]))&#123;<br>                    index[<span class="hljs-number">0</span>] = hs.get(target-nums[i]);<br>                    index[<span class="hljs-number">1</span>] = i;<br>                    <span class="hljs-keyword">return</span> index;<br>                &#125;<br>                hs.put(nums[i],i);<br>            &#125;<br>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;<br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>2.链表中两数相加（middle）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">package</span> midle;<br><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">m001</span> </span>&#123;<br>    <span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ListNode</span> </span>&#123;<br>        <span class="hljs-keyword">int</span> val;<br>        ListNode next;<br><br>        ListNode() &#123;<br>        &#125;<br><br>        ListNode(<span class="hljs-keyword">int</span> val) &#123;<br>            <span class="hljs-keyword">this</span>.val = val;<br>        &#125;<br><br>        ListNode(<span class="hljs-keyword">int</span> val, ListNode next) &#123;<br>            <span class="hljs-keyword">this</span>.val = val;<br>            <span class="hljs-keyword">this</span>.next = next;<br>        &#125;<br>    &#125;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;<br>        ListNode n1 = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">8</span>);<br>        ListNode n2 = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">9</span>);<br>        ListNode n3 = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">9</span>);<br>        n1.next = n2;<br>        n2.next = n3;<br><br>        ListNode n4 = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">9</span>);<br>        ListNode n5 = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">8</span>);<br>        n4.next = n5;<br><br>        Solution solution = <span class="hljs-keyword">new</span> Solution();<br>        ListNode l = solution.twoSum(n1, n4);<br><br>        System.out.print(<span class="hljs-string">&quot;[&quot;</span>);<br><br>        <span class="hljs-keyword">while</span> (l.next != <span class="hljs-keyword">null</span>) &#123;<br>            System.out.print(l.val + <span class="hljs-string">&quot;,&quot;</span>);<br>            l = l.next;<br>        &#125;<br>        System.out.println(l.val + <span class="hljs-string">&quot;]&quot;</span>);<br>    &#125;<br>    <span class="hljs-comment">/**</span><br><span class="hljs-comment">     * 算法思路：</span><br><span class="hljs-comment">     * 任意某一链表不为空时，两数相加得sumVal</span><br><span class="hljs-comment">     * remainder表示余数，rem=sumVal%10，表示两个位数相加，个位数存入链表</span><br><span class="hljs-comment">     * carry表示进位，car=sumVal/10，说明有进位，加入后续</span><br><span class="hljs-comment">     */</span><br>    <span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>        <span class="hljs-function"><span class="hljs-keyword">public</span> ListNode <span class="hljs-title">twoSum</span><span class="hljs-params">(ListNode l1, ListNode l2)</span> </span>&#123;<br>            ListNode root = <span class="hljs-keyword">new</span> ListNode();     <span class="hljs-comment">//结果链表头结点</span><br>            ListNode curse = root;  <span class="hljs-comment">//游标</span><br>            <span class="hljs-keyword">int</span> sumVal;<br>            <span class="hljs-keyword">int</span> rem;<br>            <span class="hljs-keyword">int</span> car = <span class="hljs-number">0</span>;<br><br>            <span class="hljs-keyword">while</span> (l1 != <span class="hljs-keyword">null</span> || l2 != <span class="hljs-keyword">null</span> || car != <span class="hljs-number">0</span>) &#123;<br>                <span class="hljs-keyword">int</span> l1val = l1 != <span class="hljs-keyword">null</span> ? l1.val : <span class="hljs-number">0</span>;<br>                <span class="hljs-keyword">int</span> l2val = l2 != <span class="hljs-keyword">null</span> ? l2.val : <span class="hljs-number">0</span>;<br>                sumVal = l1val + l2val + car;<br>                rem = sumVal % <span class="hljs-number">10</span>;<br>                car = sumVal / <span class="hljs-number">10</span>;<br>                ListNode remNode = <span class="hljs-keyword">new</span> ListNode(rem);<br>                curse.next = remNode;<br>                curse = remNode;<br><br>                <span class="hljs-keyword">if</span> (l1!= <span class="hljs-keyword">null</span>) l1 = l1.next;<br>                <span class="hljs-keyword">if</span> (l2!= <span class="hljs-keyword">null</span>) l2 = l2.next;    <span class="hljs-comment">//必须加判断，因为如果当前l2为空，l1不为空，进入下一次循环时，由于上一步l2已经为空，如果不加判断，正常走l2还要后移，则一定报错。</span><br>            &#125;<br>            <span class="hljs-keyword">return</span> root.next;<br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>3.计算字符串中最大无重复子字符串长度（middle）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">package</span> midle;<br><br><span class="hljs-keyword">import</span> java.util.HashSet;<br><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">m002</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;<br>        String s = <span class="hljs-string">&quot;&quot;</span>;<br>        Solution solution = <span class="hljs-keyword">new</span> Solution();<br>        System.out.println(solution.lengthOfLongestSubstring(s));<br>    &#125;<br><br>    <span class="hljs-comment">/**</span><br><span class="hljs-comment">     * 算法思想：</span><br><span class="hljs-comment">     * 1.将字符串转换成字符数组，用index表示开始遍历的数组元素下标，从头遍历数组，将得到的字符加入HashSet。</span><br><span class="hljs-comment">     * 2.当出现集合中的字符时，记录不同字符数，然后将集合清空，将index+1，再开始遍历。</span><br><span class="hljs-comment">     */</span><br>    <span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">lengthOfLongestSubstring</span><span class="hljs-params">(String s)</span> </span>&#123;<br>            HashSet&lt;Character&gt; hs = <span class="hljs-keyword">new</span> HashSet&lt;&gt;();<br>            <span class="hljs-keyword">char</span>[] cs = s.toCharArray();<br>            <span class="hljs-keyword">int</span> index = <span class="hljs-number">0</span>;  <span class="hljs-comment">//记录开始遍历的数组元素下标</span><br>            <span class="hljs-keyword">int</span> count = <span class="hljs-number">0</span>;  <span class="hljs-comment">//无重复字母字符串计数器</span><br>            <span class="hljs-keyword">int</span> maxCount = <span class="hljs-number">0</span>;   <span class="hljs-comment">//记录最大count值</span><br>            <span class="hljs-keyword">while</span> (index &lt; cs.length+<span class="hljs-number">1</span>)&#123;<br>                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = index; i &lt; cs.length; i++) &#123;   <span class="hljs-comment">//遍历字符串</span><br>                    <span class="hljs-keyword">if</span> (hs.contains(cs[i])) &#123;<br>                        count = <span class="hljs-number">0</span>;<br>                        hs.clear();<br>                        <span class="hljs-keyword">break</span>;<br>                    &#125;<br>                    hs.add(cs[i]);<br>                    count++;<br>                    <span class="hljs-keyword">if</span> (count &gt; maxCount) &#123;<br>                        maxCount = count;<br>                    &#125;<br>                &#125;<br>                index++;<br>            &#125;<br>            <span class="hljs-keyword">return</span> maxCount;<br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
