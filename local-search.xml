@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>访问github</title>
+    <link href="/2021/09/09/%E8%AE%BF%E9%97%AEgithub/"/>
+    <url>/2021/09/09/%E8%AE%BF%E9%97%AEgithub/</url>
+    
+    <content type="html"><![CDATA[<hr><p>1.<a href="http://github.com.ipaddress.com/">http://github.com.ipaddress.com/</a></p><img src="C:\Users\DB\AppData\Roaming\Typora\typora-user-images\image-20210909143720888.png" alt="image-20210909143720888" style="zoom: 67%;" /><p>复制IP</p><p>140.82.113.4 GitHub.com</p><hr><p>2.<a href="https://fastly.net.ipaddress.com/github.global.ssl.fastly.net">https://fastly.net.ipaddress.com/github.global.ssl.fastly.net</a></p><img src="C:\Users\DB\AppData\Roaming\Typora\typora-user-images\image-20210909143922126.png" alt="image-20210909143922126" style="zoom:67%;" /><p>复制IP </p><p>199.232.69.194 github.global.ssl.Fastly.net</p><p>打开我的电脑-windows-System32-drivers-etc-hosts</p><p>将上边IP复制到hosts文件最下边</p><p><img src="C:\Users\DB\AppData\Roaming\Typora\typora-user-images\image-20210909144133269.png" alt="image-20210909144133269"></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>leetcode_firstday</title>
     <link href="/2021/09/09/leetcode-day1/"/>
     <url>/2021/09/09/leetcode-day1/</url>
