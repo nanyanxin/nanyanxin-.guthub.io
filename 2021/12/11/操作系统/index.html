@@ -1,0 +1,550 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon1.ico">
+  <link rel="icon" href="/img/favicon1.ico">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="everyone">
+  <meta name="keywords" content="">
+  
+  <title>nanyanxin_blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":70,"cursorChar":"","loop":true},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>NYX</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-12-11 14:35" pubdate>
+        2021年12月11日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      3.6k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      37
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none"></h1>
+            
+            <div class="markdown-body">
+              <h2 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h2><h3 id="了解"><a href="#了解" class="headerlink" title="了解"></a>了解</h3><p>CPU中的告诉缓存有很多，大多都是为例解决CPU的处理速度和内存处理速度不对等的问题。</p>
+<p>还可以把内存可以看作外存的高速缓存，程序运行的时候我们把外存的数据复制到内存，由于内存的处理速度远远高于外存，这样提高了处理速度。</p>
+<p>比如，使用redis缓存就是为了解决程序处理速度和访问常规关系型数据库速度不对等的问题。</p>
+<p>命中率，要访问的数据有多少能直接在缓存中直接找到。命中率高就表明缓存设计的比较合理，从而系统处理速度就相对会快。</p>
+<p>手写操作系统—从零实现一个操作系统内核</p>
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/SWZra4_3F0V8Z35j0KVkpA">https://mp.weixin.qq.com/s/SWZra4_3F0V8Z35j0KVkpA</a></p>
+<h1 id="1操作系统基础"><a href="#1操作系统基础" class="headerlink" title="1操作系统基础"></a>1操作系统基础</h1><h2 id="1-1什么是操作系统"><a href="#1-1什么是操作系统" class="headerlink" title="1.1什么是操作系统"></a>1.1什么是操作系统</h2><p>​        操作系统是管理计算机硬件好软件资源的程序，本质是一个运行在计算机上的软件程序，操作系统内核是核心部分，负责系统的内存管理，硬件设备管理，文件系统管理及应用程序管理，内核是连接应用程序和硬件的桥梁，决定着系统的性能和稳定性。</p>
+<h2 id="1-2-系统调用"><a href="#1-2-系统调用" class="headerlink" title="1.2 系统调用"></a>1.2 系统调用</h2><p>​        根据进程访问资源的特点，我们可以把进程在系统上的运行分为用户态和系统态两个级别，我们运行的应用程序基本都在用户态，而如果我们要调用操作系统提供的系统态级别的子功能，比如：设备管理，文件管理，内存管理，进程控制和通信等，就需要系统调用，即必须通过系统调用的方式向操作系统提出服务请求，并由操作系统代为完成。</p>
+<h1 id="2进程和线程"><a href="#2进程和线程" class="headerlink" title="2进程和线程"></a>2进程和线程</h1><h2 id="2-1进程和线程的区别"><a href="#2-1进程和线程的区别" class="headerlink" title="2.1进程和线程的区别"></a>2.1进程和线程的区别</h2><p>1.定义上，进程是资源分配的最小单位，是程序执行时的一个实例。线程是cpu调度的最小单位，是进程的执行流。</p>
+<img src="https://oscimg.oschina.net/oscnet/up-cd8ac705f6f004c01e0a1312f1599430ba5.png" srcset="/img/loading.gif" lazyload alt="img" style="zoom: 67%;" />
+
+<p>从JVM的角度看进程和线程之间的关系的话，一个进程可以有多个线程，多个线程共享进程的堆和方法区，每个线程有自己的程序计数器，虚拟机栈和本地方法栈。</p>
+<h2 id="2-2进程有哪几种状态"><a href="#2-2进程有哪几种状态" class="headerlink" title="2.2进程有哪几种状态"></a>2.2进程有哪几种状态</h2><p>进程的状态大致分为五种，</p>
+<p>创建状态（new）：进程正在被创建，尚未到就绪状态。</p>
+<p>就绪状态（ready）：进程已处于准备运行的状态，即获得了除处理器外的其他资源，一旦得到分配的时间片就可运行。</p>
+<p>运行状态（running）：进程在处理器上运行。</p>
+<p>阻塞状态（waiting）：也叫等待状态，进程正在等待某一事件而暂停运行，即使处理器空闲该进程也无法运行。</p>
+<p>结束状态（terminated）：进程正在从系统中消失。</p>
+<p><img src="C:\Users\DB\AppData\Roaming\Typora\typora-user-images\image-20211206161647311.png" srcset="/img/loading.gif" lazyload alt="image-20211206161647311"></p>
+<h2 id="2-3进程间的通信方式"><a href="#2-3进程间的通信方式" class="headerlink" title="2.3进程间的通信方式"></a>2.3进程间的通信方式</h2><p>1.管道/匿名管道：用于父子进程间或者兄弟进程间</p>
+<p>2.有名管道：为了克服匿名管道无名的缺点，有名管道以磁盘文件的方式存在，实现本机任意两个进程的通信。</p>
+<p>3.信号：比较复杂的一种通信，用于接受进程某个事件已发生。</p>
+<p>4.信号量：是一个计数器，用于多进程对共享数据的访问，意图在于进程间同步。</p>
+<p>5.消息队列：是消息的一个链表，具有特定格式以及优先级，存放在内存并有消息队列标识符标识，可以实现消息的随机查询。</p>
+<p>6.共享内存：多进程可以访问同一块内存空间，不同进程可以看到对方进程中对共享内存中数据的更新。</p>
+<p>7.套接字：主要用于客户端与服务端之间通过网络进行的通信</p>
+<h2 id="2-4进程间的同步方式有哪些"><a href="#2-4进程间的同步方式有哪些" class="headerlink" title="2.4进程间的同步方式有哪些"></a>2.4进程间的同步方式有哪些</h2><p>线程同步是两个或多个共享关键资源的线程的并发执行。</p>
+<p>线程同步的方式主要有：</p>
+<p>1.互斥量，采用互斥对象机制，即只有拥有互斥对象的线程才有访问公共资源的权限。比如java中关键字synchronized和各种lock。</p>
+<p>2.信号量，它允许同一时刻多个线程访问同一资源，但要控制同一时刻访问此资源的最大线程数量。</p>
+<p>3.事件：通过通知操作（wait/notify）的方式来保持多线程同步。</p>
+<h2 id="2-5进程调度的算法"><a href="#2-5进程调度的算法" class="headerlink" title="2.5进程调度的算法"></a>2.5进程调度的算法</h2><p>进程调度算法是为了确定进程的执行顺序以实现最大的cpu利用率。</p>
+<p>1.先到先服务算法（FCFS）：从就绪队列中选择最先进入队列的进程为之分配资源，是它立即执行到结束或者因发生某件事件而被阻塞放弃占用cpu。</p>
+<p>2.短作业优先算法（SJF）：从就绪队列中选择估计运行时间最短的进程位置分配资源。</p>
+<p>3.时间片轮转调度算法（RR）：从就绪队列中选择最先进入队列的进程，分配一个时间段，称作时间片，运行时间结束就重新放入队尾。</p>
+<p>4.优先级调度算法：为每个进程分配一个优先级，优先级高的先执行。</p>
+<p>5.多级反馈队列调度算法：既使高优先级的进程得到相应又可以使短进程迅速完成。</p>
+<h2 id="2-6什么是死锁"><a href="#2-6什么是死锁" class="headerlink" title="2.6什么是死锁"></a>2.6什么是死锁</h2><p>两个或多个进程执行过程中，由于资源有限，而造成阻塞，都处于阻塞状态，若无外力作用，它们将无法推进下去，此时就产生了死锁。这些永远在等待的进程称为死锁进程。</p>
+<h2 id="2-7-产生死锁的条件"><a href="#2-7-产生死锁的条件" class="headerlink" title="2.7 产生死锁的条件"></a>2.7 产生死锁的条件</h2><p>1.互斥：资源处于非共享模式，即依次只有一个进程可以使用。</p>
+<p>2.占有并等待：一个进程至少占有一个资源，并等待另一资源。</p>
+<p>3.非抢占式：资源不能被强占，只有在持有资源的进程完成任务后才释放该资源。</p>
+<p>4.循环等待。</p>
+<h1 id="3-操作系统内存管理基础"><a href="#3-操作系统内存管理基础" class="headerlink" title="3 操作系统内存管理基础"></a>3 操作系统内存管理基础</h1><h2 id="3-1内存管理主要做什么"><a href="#3-1内存管理主要做什么" class="headerlink" title="3.1内存管理主要做什么"></a>3.1内存管理主要做什么</h2><p>操作系统的内存管理主要负责资源的分配与回收，另外地址转换即将逻辑地址转换成物理地址等功能也是内存管理要做的。</p>
+<h2 id="3-2-常见的集中内存管理机制"><a href="#3-2-常见的集中内存管理机制" class="headerlink" title="3.2 常见的集中内存管理机制"></a>3.2 常见的集中内存管理机制</h2><p>内存管理主要分为连续分配管理和非连续分配管理两种方式，连续分配管理方式指一个用户程序分配一个连续的内存空间，如块式管理。非连续分配管理方式允许一个程序使用内存分布在离散或者说不相邻的内存中，如页式管理和段式管理。</p>
+<p>块式管理，将内存分为几个固定大小的块，每个块只包含一个进程。如果程序运行需要内存，操作系统就分配给它一块，如果程序运行只需要很小的内存空间的话，分配的这块内存很大一部分就会被浪费，被浪费的这部分称之为碎片。</p>
+<p>页式管理，将主存分为大小相等且固定的一页一页的形式，页较小，相对于块块式管理划分力度更小，提高了内存利用率，减少了碎片，页式管理通过页表对于逻辑地址和物理地址</p>
+<p>段式管理，将主存分为一段一段的，每一段的空间比页小很多。最重要的是每段都有实际意义，每个段定义了一组逻辑信息，如主程序段，子程序段，数据段及栈段。段式管理通过段表对应逻辑地址和物理地址。</p>
+<p>段页式管理，结合了页式管理和段式管理，将主存先分成若干段，每个段又分成若干页，段与段之间以及段的内部都是离散的。</p>
+<h3 id="3-2-1-逻辑（虚拟）地址和物理地址"><a href="#3-2-1-逻辑（虚拟）地址和物理地址" class="headerlink" title="3.2.1 逻辑（虚拟）地址和物理地址"></a>3.2.1 逻辑（虚拟）地址和物理地址</h3><p>逻辑地址由操作系统决定，我们编程一般只有可能和逻辑地址打交道， 比如c语言中指针存储的数值就可以理解为内存里的一个地址，这个地址就是我们所说的逻辑地址。</p>
+<p>物理地址指的是真实物理内存中的地址，具体以节点来说就是内存地址寄存器中的地址，物理地址是内存单元真正的地址。</p>
+<h3 id="3-2-2-分页机制和分段机制的共同点和区别"><a href="#3-2-2-分页机制和分段机制的共同点和区别" class="headerlink" title="3.2.2 分页机制和分段机制的共同点和区别"></a>3.2.2 分页机制和分段机制的共同点和区别</h3><p>共同点：1）都是为了提高内存利用率，减少内存碎片；</p>
+<p>​                2）页和段都是离散存储的，所以两者都是离散分配内存的方式，但是页和段中内存是连续的。</p>
+<p>区别：1）页的大小是固定的，而段的大小不固定。</p>
+<p>​            2）分页是为了满足操作系统内存管理需求，而段式逻辑信息的单位。在程序中可以体现为代码段，数据段，能更好满足用户的需要。</p>
+<h3 id="3-2-3-多级页表和快表"><a href="#3-2-3-多级页表和快表" class="headerlink" title="3.2.3 多级页表和快表"></a>3.2.3 多级页表和快表</h3><p>为了提高内存空间的性能，提出多级页表，多级页表类似一本书的目录，要想找某个内容，需要先找到某一章，再找某一节。这样有个缺点是，提高了内存空间性能，牺牲了时间性能，因为要多次访问内存。为了弥补损失的时间性能，提出快表，快表相当于一个高速缓冲存储器，存储最近使用过的也对于的页框号，这样cpu需要访问某一页，直接在快表中找，而不用访问内存，从而提升时间性能。</p>
+<h1 id="4-虚拟内存"><a href="#4-虚拟内存" class="headerlink" title="4.虚拟内存"></a>4.虚拟内存</h1><p>在Windows操作系统中虚拟内存是作为内存使用的一部分硬盘空间。因为当电脑中运行的程序占用内存很大时导致内存消耗殆尽。为了解决这一问题，就使用了虚拟内存技术。</p>
+<p>虚拟内存使应用程序认为它拥有连续的可用的内存，即一个连续完整的内存空间，而实际上它通常是被分隔成多个物理内存碎片，还有部分暂时存储在外部磁盘存储器上，在需要时进行数据交换。</p>
+<h2 id="4-1虚拟内存技术实现"><a href="#4-1虚拟内存技术实现" class="headerlink" title="4.1虚拟内存技术实现"></a>4.1虚拟内存技术实现</h2><p>请求分页存储管理</p>
+<p>请求分段存储管理</p>
+<p>请求段页式存储管理</p>
+<p>注意：区别 是否将程序所需的全部地址空间同时装入主存，请求分页存储管理仅装入当前要执行的部分页即可，这也就是请求分页存储管理可以提供虚拟内存的原因。</p>
+<h2 id="4-1-局部性原理"><a href="#4-1-局部性原理" class="headerlink" title="4.1 局部性原理"></a>4.1 局部性原理</h2><p>程序在执行时，往往呈现局部性规律，也就是说在某个较短时间段内，程序执行局限于某一部分，程序访问的存储空间也局限于某个区域。</p>
+<h2 id="4-2-页面置换算法"><a href="#4-2-页面置换算法" class="headerlink" title="4.2 页面置换算法"></a>4.2 页面置换算法</h2><p>最佳页面置换算法（OPT），选择的被淘汰页在最长时间内或者之后永不再被访问的页面</p>
+<p>先进先出页面置换算法（FIFO），选择在内存中驻留时间最长的页面淘汰，即淘汰最先进入内存的页面。</p>
+<p>最久未使用页面置换算法（LRU），选择在最近一段时间内最久不用的页面予以淘汰。</p>
+<h1 id="Linux基础知识"><a href="#Linux基础知识" class="headerlink" title="Linux基础知识"></a>Linux基础知识</h1><h3 id="1-Linux目录树"><a href="#1-Linux目录树" class="headerlink" title="1.Linux目录树"></a>1.Linux目录树</h3><p><img src="https://snailclimb.gitee.io/javaguide/docs/cs-basics/operating-system/images/Linux%E7%9B%AE%E5%BD%95%E6%A0%91.png" srcset="/img/loading.gif" lazyload alt="Linux的目录结构"></p>
+<p>/bin 存放二进制可执行文件</p>
+<p>/etc 存放系统管理和配置文件</p>
+<p>/home 存放所有用户文件的根目录</p>
+<p>/usr 存放系统应用程序</p>
+<p>/opt 存放安装包</p>
+<p>/root 超级用户的主目录</p>
+<p>/sbin 存放二进制可执行文件，只有root才可以访问</p>
+<p>/dev 存放设备文件</p>
+<p>/lib 存放和系统运行相关的库文件</p>
+<p>/tmp 存放各种临时文件</p>
+<p>/var 存放运行是需要改变数据的文件</p>
+<h3 id="2-Linux基本命令"><a href="#2-Linux基本命令" class="headerlink" title="2.Linux基本命令"></a>2.Linux基本命令</h3><h4 id="目录切换："><a href="#目录切换：" class="headerlink" title="目录切换："></a>目录切换：</h4><p><strong><code>cd ..（或cd../）</code>：</strong> 切换到上一层目录</p>
+<p><strong><code>cd /</code>：</strong> 切换到系统根目录</p>
+<p><strong><code>cd ~</code>：</strong> 切换到用户主目录</p>
+<p><strong><code>cd -</code>：</strong> 切换到上一个操作所在目录</p>
+<h4 id="目录的操作命令"><a href="#目录的操作命令" class="headerlink" title="目录的操作命令"></a>目录的操作命令</h4><p>**<code>ls</code>**查看当前目录下的所有目录和文件名</p>
+<p><strong><code>ll</code></strong> 等价于 **<code> ls -l</code>**查案当前目录下所有目录和文件的信息</p>
+<p><img src="C:\Users\DB\AppData\Roaming\Typora\typora-user-images\image-20211207093600132.png" srcset="/img/loading.gif" lazyload alt="image-20211207093600132"></p>
+<p>​    第一栏 表示文件的属性 可读可写可执行</p>
+<p>​                第一位表示文件类型</p>
+<p>​                第2-4位表示所有者权限</p>
+<p>​                第5-7位表示所属组权限</p>
+<p>​                第8-10位表示其他用户权限</p>
+<p>​    第二栏 表示文件个数，目录的话就是该目录中文件个数</p>
+<p>​    第三栏 表示文件或目录拥有者</p>
+<p>​    第四栏 表示所属的组</p>
+<p>​    第五栏 文件大小</p>
+<p>​    第六栏 最后修改时间</p>
+<p>​    第七栏 文件名</p>
+<p>**<code>mkdir 目录名</code>**——新建目录</p>
+<p><strong><code>rm</code></strong> 删除目录</p>
+<p><strong><code>mv</code></strong> 移动目录</p>
+<p><strong><code> cp -r</code></strong>  递归拷贝</p>
+<p><strong><code>touch </code></strong> 创建文件</p>
+<p><strong><code>tar -zcvf</code></strong> 压缩文件</p>
+<p>​    z    压缩命令</p>
+<p>​    c    打包文件</p>
+<p>​    v    显示运行过程</p>
+<p>​    f    指定文件名</p>
+<p><strong><code>tar -xvf</code></strong> 解压文件</p>
+<p>​    x    解压命令</p>
+<h4 id="修改文件-目录权限"><a href="#修改文件-目录权限" class="headerlink" title="修改文件/目录权限"></a>修改文件/目录权限</h4><p><strong><code>chmod 777 文件名</code></strong> 表示修改文件的权限为所有用户可读可写可执行</p>
+<p><img src="C:\Users\DB\AppData\Roaming\Typora\typora-user-images\image-20211207095956995.png" srcset="/img/loading.gif" lazyload alt="image-20211207095956995"></p>
+<h4 id="Linux用户管理"><a href="#Linux用户管理" class="headerlink" title="Linux用户管理"></a>Linux用户管理</h4><p><strong><code>useradd</code></strong>    添加用户</p>
+<p><strong><code> userdel</code></strong>    删除用户</p>
+<p><strong><code>usermod</code></strong>    修改账号</p>
+<p><strong><code>passwd</code></strong> 用户名    更改或创建用户密码</p>
+<p>用户组类似</p>
+<h4 id="其他常用命令"><a href="#其他常用命令" class="headerlink" title="其他常用命令"></a>其他常用命令</h4><p><strong><code>pwd</code></strong>    显示当前所在位置</p>
+<p><strong><code>sudo + 其他命令</code></strong>  以系统管理员身份执行命令</p>
+<p><strong><code>grep</code></strong>    搜索命令</p>
+<p><strong><code>ifconfig</code></strong> 查看网卡信息</p>
+<p><strong><code>ping</code></strong>    查看与某台机器的连接情况</p>
+<p><strong><code> netstat -an</code></strong> 查看端口使用情况</p>
+<h1 id="了解shell"><a href="#了解shell" class="headerlink" title="了解shell"></a>了解shell</h1><p>echo输出</p>
+<p>使用变量时 用$修饰</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/12/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/11/20/idea%E4%BD%BF%E7%94%A8test%E6%B3%A8%E8%A7%A3/">
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    <!--《添加网站运行时间 -->
+<br/>
+
+<!-- 添加网站运行时间》-->
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

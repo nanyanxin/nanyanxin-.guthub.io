@@ -18,9 +18,25 @@
   <meta name="author" content="everyone">
   <meta name="keywords" content="">
   
-  <title>归档 - nanyanxin_blog</title>
+  <title>nanyanxin_blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -48,7 +64,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -147,9 +163,46 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="归档">
+            <span class="h2" id="subtitle" title="">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-12-11 14:40" pubdate>
+        2021年12月11日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      787 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      8
+       分钟
+    </span>
+  
+
+  
+  
+</div>
 
             
           </div>
@@ -162,52 +215,124 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 23 篇文章</p>
-  <hr>
-  
-  
-    
       
-      <p class="h5">2021</p>
-    
-    <a href="/2021/11/20/idea%E4%BD%BF%E7%94%A8test%E6%B3%A8%E8%A7%A3/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title"></span>
-      <time style="float: right;">11-20</time>
-    </a>
-  
-    
-    <a href="/2021/11/11/%E9%93%BE%E8%A1%A8%20-%20%E7%9B%B8%E5%85%B3%E9%A2%98%E7%9B%AE/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">链表相关题目</span>
-      <time style="float: right;">11-11</time>
-    </a>
-  
-    
-    <a href="/2021/11/11/%E6%8E%92%E5%BA%8F%20-%20%E5%85%AB%E5%A4%A7%E6%8E%92%E5%BA%8F/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">排序 - 八大排序</span>
-      <time style="float: right;">11-11</time>
-    </a>
-  
-</div>
 
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none"></h1>
+            
+            <div class="markdown-body">
+              <p><a target="_blank" rel="noopener" href="https://snailclimb.gitee.io/javaguide/#/docs/java/multi-thread/Java%E5%B9%B6%E5%8F%91%E5%9F%BA%E7%A1%80%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93?id=java-%E5%B9%B6%E5%8F%91%E5%9F%BA%E7%A1%80%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93">Java 并发基础</a></p>
+<p><strong>java****多线程基础</strong></p>
+<p>1.线程基本使用</p>
+<p>使用继承Thread来实现创建线程</p>
+<p>Cat类继承了Thread类</p>
+<p>Cat c = new Cat();c.start(); *//*<em>启动线程</em></p>
+<p>Java是单继承的，在某些情况下一个类可能已经继承了某个父类，这时再用继承Thread类的方式创建线程就不行了。这时，可以通过实现Runnable接口来创建线程。</p>
+<p>dog类实现了Runnable接口</p>
+<p>dog d = new dog();*//d.start(); //Runnable<strong>中没有</strong>start()*<em>方法</em>Thread thread = new Thread(d);thread.start();</p>
+<p>这里底层使用了一种设计模式，采用了”代理模式”</p>
+<p>实现Runnable接口的方式更加适合多个线程共享一个资源的情况，避免了单继承的限制</p>
+<p>t1 th1 = new t1(); Thread thread1 = new Thread(th1); Thread thread2 = new Thread(th1); thread1.start(); thread2.start();</p>
+<p>2.线程终止</p>
+<p>在线程中设置Boolean变量loop，将loop作为循环条件，并提供一个setLoop方法。在main线程中，当满足某条件时，setLoop(false)。</p>
+<p>3.线程常用方法</p>
+<p>setName //设置线程名称</p>
+<p>getName //返回该线程名称</p>
+<p>start //使线程开始执行，Java虚拟机地城调用该线程的start0方法</p>
+<p>run //调用线程对象run方法</p>
+<p>setPriority //更改线程优先级</p>
+<p>getPriority //获取线程的优先级</p>
+<p>sleep //在指定的毫秒数呢让当前正在执行的线程休眠（暂停执行）</p>
+<p>interrupt //中断线程</p>
+<p>yield() //线程礼让，让出cpu，让其他线程执行，但礼让时间不确定，也不一定礼让成功</p>
+<p>join() //线程插队，插队的线程一旦插入成功，则肯定先执行完插入线程的所有任务。</p>
+<p>4.守护线程</p>
+<p>当主线程结束后，如果希望子线程自动结束，只需将子线程设置成守护线程subThread.setDaemon(true);</p>
+<p>常见的守护线程为垃圾回收机制(只要程序中还有线程在执行，垃圾回收机制就一直在)</p>
+<p>5.线程状态</p>
+<p>线程状态。 线程可以处于以下状态之一：</p>
+<p>NEW尚未启动的线程处于此状态。（新建的线程，还未调用start方法）</p>
+<p>RUNNABLE  在Java虚拟机中执行的线程处于此状态。（RUNNABLE中还可分为Ready和Running）</p>
+<p>BLOCKED    被阻塞等待监视器锁定的线程处于此状态。</p>
+<p>WAITING    正在等待另一个线程执行特定动作的线程处于此状态。</p>
+<p>TIMED_WAITING  正在等待另一个线程执行动作达到指定等待时间的线程处于此状态。</p>
+<p>TERMINATED    已退出的线程处于此状态。</p>
+<p><img src="file:///C:/Users/DB/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif" srcset="/img/loading.gif" lazyload alt="clipboard.png"></p>
+<p>6.线程同步(Synchronzed)非公平锁</p>
+<p>数据在任何同一时刻，最多有一个线程访问，以保证数据的完整性</p>
+<p>可以在方法上加锁，也可以在代码块上加锁</p>
+<p>7.互斥锁</p>
+<p>关键字Synchronized来与对象的互斥锁联系，当某个对象用Synchronized修饰时，表明该对象在任意时刻只能由一个线程访问</p>
+<p>同步方法（非静态）的锁可以是this，也可以是其他对象（要求是同一对象）</p>
+<p>同步方法（静态）的锁为当前类本身</p>
 
-
-
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/12/11/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5%E4%B8%8E%E5%B8%B8%E8%AF%86/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/12/11/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -291,9 +416,15 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
 
 
 

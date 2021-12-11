@@ -18,7 +18,7 @@
   <meta name="author" content="everyone">
   <meta name="keywords" content="">
   
-  <title>排序 - nanyanxin_blog</title>
+  <title>nanyanxin_blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -163,7 +163,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="排序">
+            <span class="h2" id="subtitle" title="">
               
             </span>
 
@@ -173,8 +173,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-09-14 09:44" pubdate>
-        2021年9月14日 上午
+      <time datetime="2021-12-11 14:35" pubdate>
+        2021年12月11日 下午
       </time>
     </span>
   
@@ -185,7 +185,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      319 字
+      1.7k 字
     </span>
   
 
@@ -195,7 +195,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      5
+      17
        分钟
     </span>
   
@@ -225,15 +225,79 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">排序</h1>
+            <h1 style="display: none"></h1>
             
             <div class="markdown-body">
-              <p>s_1913.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">package</span> l_Simple.sort;<br><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">s_1913</span> </span>&#123;<br>    <span class="hljs-comment">/**</span><br><span class="hljs-comment">     * 两个对数之间的最大乘积差</span><br><span class="hljs-comment">     */</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;<br>        <span class="hljs-keyword">int</span>[] nums = &#123;<span class="hljs-number">4</span>,<span class="hljs-number">2</span>,<span class="hljs-number">5</span>,<span class="hljs-number">9</span>,<span class="hljs-number">7</span>,<span class="hljs-number">4</span>,<span class="hljs-number">8</span>&#125;;<br>        Solution solution = <span class="hljs-keyword">new</span> Solution();<br>        System.out.println(solution.maxProductDifference(nums));<br>    &#125;<br>    <span class="hljs-comment">/**</span><br><span class="hljs-comment">     * 思想：找出最大的两个数，和最小的两个数即可</span><br><span class="hljs-comment">     */</span><br>    <span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">maxProductDifference</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] nums)</span> </span>&#123;<br>            <span class="hljs-comment">//采用冒泡排序，将数组进行排序，然后将排序后数组的最后两个元素乘积减去前两个元素乘积</span><br>            <span class="hljs-keyword">int</span> temp;<br>            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">2</span>; i++) &#123;<br>                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; nums.length-i-<span class="hljs-number">1</span>; j++) &#123;<br>                    <span class="hljs-keyword">if</span> (nums[j] &gt; nums[j+<span class="hljs-number">1</span>])&#123;<br>                        temp = nums[j];<br>                        nums[j] = nums[j+<span class="hljs-number">1</span>];<br>                        nums[j+<span class="hljs-number">1</span>] = temp;<br>                    &#125;<br>                &#125;<br>                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = i+<span class="hljs-number">1</span>; j &lt; nums.length-i-<span class="hljs-number">1</span>; j++) &#123;<br>                    <span class="hljs-keyword">if</span> (nums[i] &gt; nums[j])&#123;<br>                        temp = nums[j];<br>                        nums[j] = nums[i];<br>                        nums[i] = temp;<br>                    &#125;<br>                &#125;<br>            &#125;<br>            <span class="hljs-keyword">return</span> nums[nums.length-<span class="hljs-number">1</span>]*nums[nums.length-<span class="hljs-number">2</span>] - nums[<span class="hljs-number">0</span>]*nums[<span class="hljs-number">1</span>];<br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<p>s_2037.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">package</span> l_Simple.sort;<br><br><span class="hljs-keyword">import</span> java.util.Arrays;<br><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">s_2037</span> </span>&#123;<br>    <span class="hljs-comment">/**</span><br><span class="hljs-comment">     * 使每位学生都有座位的最少移动次数</span><br><span class="hljs-comment">     */</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;<br>        <span class="hljs-keyword">int</span> [] seats = &#123;<span class="hljs-number">3</span>,<span class="hljs-number">1</span>,<span class="hljs-number">5</span>&#125;;<br>        <span class="hljs-keyword">int</span> [] students = &#123;<span class="hljs-number">2</span>,<span class="hljs-number">7</span>,<span class="hljs-number">4</span>&#125;;<br>        Solution solution = <span class="hljs-keyword">new</span> Solution();<br>        System.out.println(solution.minMovesToSeat(seats,students));<br>    &#125;<br>    <span class="hljs-comment">/**</span><br><span class="hljs-comment">     * 思想：</span><br><span class="hljs-comment">     */</span><br>    <span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">minMovesToSeat</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] seats, <span class="hljs-keyword">int</span>[] students)</span> </span>&#123;<br>            Arrays.sort(seats);<br>            Arrays.sort(students);<br>            <span class="hljs-keyword">int</span> min = <span class="hljs-number">0</span>;<br>            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; seats.length; i++) &#123;<br>                min = min + Math.abs(seats[i]-students[i]);<br>            &#125;<br>            <span class="hljs-keyword">return</span> min;<br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-
+              <h1 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h1><h2 id="1-外键"><a href="#1-外键" class="headerlink" title="1.外键"></a>1.外键</h2><h3 id="1-主键和外键的区别"><a href="#1-主键和外键的区别" class="headerlink" title="1.主键和外键的区别"></a>1.主键和外键的区别</h3><p>主键用于唯一标识一个元组，不能有重复，不允许为空，一个表只能有一个主键</p>
+<p>外键用于和其他表建立联系，外键是另一个表的主键，外键可以重复，可以是空，一个表可以有多个外键。</p>
+<h3 id="2-为什么不推荐使用外键与级联"><a href="#2-为什么不推荐使用外键与级联" class="headerlink" title="2.为什么不推荐使用外键与级联"></a>2.为什么不推荐使用外键与级联</h3><p>级联，举个例子，如果学生表的主键是student_id，成绩表的student_id为外键，当更新学生表的student_id时，同时会触发成绩表中student_id的更新，此为级联。</p>
+<p>外键主要是对分库分表不友好，使用外键增减了复杂性和额外工作，每次更新或者删除操作时，都需要考虑外键约束。</p>
+<p>但对于不涉及分库分表的系统外键还是有一定好处的，比如包证数据库数据的一致性和完整性，级联操作方便了，减轻代码量。</p>
+<h2 id="2-drop，delete，truncate区别"><a href="#2-drop，delete，truncate区别" class="headerlink" title="2.drop，delete，truncate区别"></a>2.drop，delete，truncate区别</h2><p>drop（丢弃数据），drop table 表名，直接将表删除。</p>
+<p>delete（删除数据），delete from 表名 where 列名=值，删除表中某一行数据</p>
+<p>truncate（清空数据），truncate table 表名，删除表中数据，再向表中插入数据时，自增长id从1开始。</p>
+<p>drop是DML语句即数据库操作语言，delete和truncate是DDL语句即数据库定义语言。</p>
+<h2 id="3-数据库设计通常分为哪几步？"><a href="#3-数据库设计通常分为哪几步？" class="headerlink" title="3.数据库设计通常分为哪几步？"></a>3.数据库设计通常分为哪几步？</h2><p>1.需求分析</p>
+<p>2.概念结构设计</p>
+<p>3.逻辑结构设计</p>
+<p>4.物理结构设计</p>
+<p>5.数据库实施</p>
+<p>6.数据库的运行和维护</p>
+<h2 id="4-数据库范式"><a href="#4-数据库范式" class="headerlink" title="4.数据库范式"></a>4.数据库范式</h2><p>第一范式（1NF）</p>
+<p>属性（表中字段）不能再被分割，也就是这个字段只能是一个值。1NF是所有关系型数据库的最基本要求。</p>
+<p><img src="C:\Users\DB\AppData\Roaming\Typora\typora-user-images\image-20211209220337428.png" srcset="/img/loading.gif" lazyload alt="image-20211209220337428"></p>
+<p>第二范式（2NF）</p>
+<p>表中的非主属性必须完全依赖于主属性。</p>
+<p>2NF在1NF的基础上消除了非主属性对主属性的部分函数依赖。</p>
+<p>第三范式（3NF）</p>
+<p>表中的所有数据元素不但要能唯一被主关键字所标识，而且它们之间还必须相互独立，不存在其他的函数关系。</p>
+<p>3NF在2NF的基础上消除了非主属性对主属性的传递函数依赖。</p>
+<p>BCNF（3.5范式）</p>
+<p>消除主属性对主键的部分与传递依赖</p>
+<p>第四范式（4NF）</p>
+<p>消除表中的多值依赖</p>
+<h1 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h1><p>关系型数据库就是建立在关系模型基础上的数据库。数据之间的关系（一对一，一对多，多对多）</p>
+<h2 id="1-存储引擎"><a href="#1-存储引擎" class="headerlink" title="1.存储引擎"></a>1.存储引擎</h2><p>mysql 5.5之前使用的存储引擎是MyISAM，mysql 5.5之后，默认使用InnoDB。</p>
+<p>查看表的存储引擎的命令是：show table status like “表名”</p>
+<h3 id="InnoDB和MyISAM的区别"><a href="#InnoDB和MyISAM的区别" class="headerlink" title="InnoDB和MyISAM的区别"></a>InnoDB和MyISAM的区别</h3><p>InnoDB支持事务和行级锁，具有提交和回滚的事务能力；MyISAM不支持，只有表级锁，而且奔溃后无法安全恢复。</p>
+<h2 id="2-事务"><a href="#2-事务" class="headerlink" title="2.事务"></a>2.事务</h2><p>事务是逻辑上的一组操作，要么都执行，要么都不执行。</p>
+<p>比如，a给b转账100，那么a余额减少100，b余额增加100，事务会把这两个操作看作一个整体，要么都成功，要么都失败。</p>
+<h4 id="1-事务特性（ACID）"><a href="#1-事务特性（ACID）" class="headerlink" title="1.事务特性（ACID）"></a>1.事务特性（ACID）</h4><p>1.原子性（Atomicity）：事务是最小的执行单位，不允许分割。事务的原子性确保动作要么全部完成，要么全不起作用。</p>
+<p>MySQL InnoDB引擎使用undo log（回滚日志）保证事务的原子性。</p>
+<p>2.一致性（Consistency）：执行事务前后，数据保持一致。例如转账时，无论事务成不成功，转账者和收款者余额总和不变。</p>
+<p>3.隔离性（Isolation）：并发访问数据库时，一个用户的事务不被其他事务所干扰，各并发事务之间数据库是独立的。</p>
+<p>MySQL InnoDB 引擎通过锁机制，MVCC等手段保证事务的隔离性。</p>
+<p>4.持久性（Durability）：一个事务被提交之后，它对数据库中数据的改变是持久的。</p>
+<p>MySQL InnoDB引擎使用  redo log（重做日志）保证事务的持久性。</p>
+<h4 id="2-并发事务带来哪些问题"><a href="#2-并发事务带来哪些问题" class="headerlink" title="2.并发事务带来哪些问题"></a>2.并发事务带来哪些问题</h4><p>1.脏读，</p>
+<p>2.丢失修改</p>
+<p>3.不可重复读</p>
+<p>4.换读</p>
+<h4 id="3-事务隔离级别有哪些？"><a href="#3-事务隔离级别有哪些？" class="headerlink" title="3.事务隔离级别有哪些？"></a>3.事务隔离级别有哪些？</h4><p>1.读取未提交</p>
+<p>2.读取已提交</p>
+<p>3.可重复读</p>
+<p>4.可串行化</p>
+<p><img src="C:\Users\DB\AppData\Roaming\Typora\typora-user-images\image-20211209233627144.png" srcset="/img/loading.gif" lazyload alt="image-20211209233627144"></p>
+<p>MySQL默认隔离级别是 可重复读。</p>
+<h2 id="3-索引"><a href="#3-索引" class="headerlink" title="3.索引"></a>3.索引</h2><p>在MySQL中，MyISAM引擎和InnoDB都是使用B+TREE作为索引结构。</p>
+<h3 id="1-B树和B-树"><a href="#1-B树和B-树" class="headerlink" title="1. B树和B+树"></a>1. B树和B+树</h3><p>B树全称为多路平衡查找树，一棵m阶B树</p>
+<p>1）树中每个节点至多有m棵子树，根节点至少有两棵子树，除根节点以外的所有非叶节点至少有┌m/2┐ 棵子树。</p>
+<p>2）每个非根节点所包含的关键字个数最少┌m/2┐-1，最多m-1。</p>
+<p>3）所有叶节点都位于同一层，并不带任何信息。</p>
+<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg2018.cnblogs.com%2Fblog%2F1496926%2F201911%2F1496926-20191121131540064-1808531936.png&refer=http%3A%2F%2Fimg2018.cnblogs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1641712114&t=00b06351f0ded49fb14873c2a7da2d27" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>B+树是B树的变种</p>
+<p>1）树中每个节点至多有m个子树，根节点至少两个子树，除根节点以外的所有非叶子节点至少有┌m/2┐ 棵子树。</p>
+<p>2）有k个子树的节点必有k个关键字。</p>
+<p>3）所有叶节点位于同一层，数据保存在叶节点中。</p>
+<p><img src="C:\Users\DB\AppData\Roaming\Typora\typora-user-images\image-20211210150948552.png" srcset="/img/loading.gif" lazyload alt="image-20211210150948552"></p>
+<h4 id="B树和B-树的区别"><a href="#B树和B-树的区别" class="headerlink" title="B树和B+树的区别"></a>B树和B+树的区别</h4><p>1）B树所有节点既存放键key也存放数据data；而B+树只有叶子节点存放key和data，其它节点存放key。</p>
+<p>2）B树的所有叶子节点都是独立的；而B+树的叶子节点有一条引用链指向与它相邻的叶子节点。</p>
+<p>3）B树的检索过程相当于对范围内的每个节点的关键字做二分查找，找到就停止。而B+树的任何查找都是从根节点到叶子节点。</p>
+<h3 id="2-索引类型"><a href="#2-索引类型" class="headerlink" title="2.索引类型"></a>2.索引类型</h3><h4 id="主键索引"><a href="#主键索引" class="headerlink" title="主键索引"></a>主键索引</h4><p>数据表的主键列使用的就是主键索引。</p>
+<p>在MySQL的InnoDB的表中。当没有指定表的主键是，InnoDB会自动先检查表中是否有唯一索引的字段，如果有则选择该字段为默认的主键，否则InnoDB将会自动创建一个6 Byte的自增主键。</p>
+<h4 id="二级索引（辅助索引）"><a href="#二级索引（辅助索引）" class="headerlink" title="二级索引（辅助索引）"></a>二级索引（辅助索引）</h4><p>一级索引也叫集聚索引，叶子节点存放主索引和数据的树。一般主键索引都是一级索引。</p>
+<p>二级索引也叫非集聚索引，叶子结点存放辅助索引和主索引的树。</p>
+<p>一级索引可以单独存在，二级索引不能单独存在，必须依附于一级索引，这叫做“回表”。</p>
 
             </div>
             <hr>
@@ -254,9 +318,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/09/14/%E5%93%88%E5%B8%8C%E8%A1%A8/">
+                      <a href="/2021/12/11/Java%20%E5%B9%B6%E5%8F%91%E5%9F%BA%E7%A1%80/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">哈希表</span>
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -264,8 +328,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/09/14/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/">
-                        <span class="hidden-mobile">二分查找</span>
+                      <a href="/2021/12/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

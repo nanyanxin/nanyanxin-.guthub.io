@@ -18,7 +18,7 @@
   <meta name="author" content="everyone">
   <meta name="keywords" content="">
   
-  <title>链表相关题目 - nanyanxin_blog</title>
+  <title>nanyanxin_blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -163,7 +163,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="链表相关题目">
+            <span class="h2" id="subtitle" title="">
               
             </span>
 
@@ -173,8 +173,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-11-11 09:45" pubdate>
-        2021年11月11日 上午
+      <time datetime="2021-12-11 14:35" pubdate>
+        2021年12月11日 下午
       </time>
     </span>
   
@@ -185,7 +185,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      438 字
+      1.8k 字
     </span>
   
 
@@ -195,7 +195,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      4
+      19
        分钟
     </span>
   
@@ -225,20 +225,75 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">链表相关题目</h1>
+            <h1 style="display: none"></h1>
             
             <div class="markdown-body">
-              <p>1.判断单链表是否存在环</p>
-<p>1）</p>
-<p>a)给每个节点设置一个flag标记位，初始值为false，遍历到一个节点就改为true，如果遍历到下一个节点flag为true，则说明有环。</p>
-<p>b)类似的方法，还可以使用哈希表缓存，以节点ID为键，创建一个HashSet集合，用来存储遍历过的节点，每遍历到一个新节点，就用新节点和HashSet集合当中存储的节点作比较，如果发现HashSet当中存在相同节点ID，则说明链表有环。</p>
-<p>c)再笨一点的方法就是用 set 集合遍历链表，把节点放入set里，每次访问下个节点时，如果set长度不变，则跳出，说明有环。否则set长度+1，继续遍历。</p>
-<p>2）快慢指针</p>
-<p>创建两个指针p和q，同时指向头结点，遍历链表时，p走一步，q走两步，然后比较两个指针指向的节点是否相同，如果相同，则判断出链表有环。</p>
-<p>2.如何找出有环链表的入环点</p>
-<p>基于上面的快慢指针，在快慢指针的第一次相遇点，设置一个指针t1，在链表头设置一个指针t2，t1和t2同时走，每次走一步，当相遇时，指向的节点就是入环点。</p>
-<p>3.如何判断两个单链表是否相交，以及相交点</p>
-<p>对于两个单链表如果相交的话，那么在相交点后的所有节点是两个链表共有的，那么最后一个节点一定相同，所以遍历两个单链表的最后一个节点是否相同就行了，时间复杂度为O(l1+l2)。</p>
+              <h1 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h1><h2 id="1-OSI与TCP-IP各层的结构与功能"><a href="#1-OSI与TCP-IP各层的结构与功能" class="headerlink" title="1.OSI与TCP/IP各层的结构与功能"></a>1.OSI与TCP/IP各层的结构与功能</h2><p><img src="C:\Users\DB\AppData\Roaming\Typora\typora-user-images\image-20211207173414342.png" srcset="/img/loading.gif" lazyload alt="image-20211207173414342"></p>
+<h3 id="1-应用层"><a href="#1-应用层" class="headerlink" title="1.应用层"></a>1.应用层</h3><p>应用层的任务是通过应用进程间的交互来完成特定网络应用，应用层的协议定义的是应用进程间的通信和交互的规则。</p>
+<p>应用层协议有，域名系统（DNS），超文本传输协议（HTTP），电子邮件传输协议（SMTP）等。</p>
+<p>应用层交互的数据单元称为报文。</p>
+<h3 id="2-传输层"><a href="#2-传输层" class="headerlink" title="2.传输层"></a>2.传输层</h3><p>传输层的任务是负责向两台主机进程之间的通信提供通用的数据传输服务。应用进程利用该服务传送应用层的报文。</p>
+<p>传输层有分用和复用的功能。复用指多个应用层进程可用时使用下面运输层的服务。分用是指运输层把收到的信息分别交付给上面应用层的各进程。</p>
+<p>传输层的协议主要有TCP和UDP。</p>
+<p>传输控制协议（TCP）：提供面向连接的，可靠的数据传输服务。</p>
+<p>用户数据协议（UDP）：提供无连接的数据传输服务，不保证数据传输的可靠性。</p>
+<p>TCP数据报格式:</p>
+<p><img src="C:\Users\DB\AppData\Roaming\Typora\typora-user-images\image-20211208102811226.png" srcset="/img/loading.gif" lazyload alt="image-20211208102811226" style="zoom: 67%;" /><img src="C:\Users\DB\AppData\Roaming\Typora\typora-user-images\image-20211208102914290.png" srcset="/img/loading.gif" lazyload alt="image-20211208102914290" style="zoom: 67%;" /></p>
+<p>UDP数据报格式：</p>
+<p><img src="C:\Users\DB\AppData\Roaming\Typora\typora-user-images\image-20211208103112120.png" srcset="/img/loading.gif" lazyload alt="image-20211208103112120"><img src="C:\Users\DB\AppData\Roaming\Typora\typora-user-images\image-20211208103123416.png" srcset="/img/loading.gif" lazyload alt="image-20211208103123416"></p>
+<h3 id="3-网络层"><a href="#3-网络层" class="headerlink" title="3.网络层"></a>3.网络层</h3><p>网络层的任务是选择合适的网间路由和交换节点，确保数据及时传送。因为两个计算机在网络中通信时会经过很多个数据链路，还有通信子网。</p>
+<p>在发送数据时，网络层会把传输层产生的报文段或用户数据报封装成分组或报进行传送，由于网络层使用IP协议，因此该分组或包也叫IP数据报，简称数据报。</p>
+<p>网络层的协议主要是跟路由相关的协议，此外有IP，ICMP</p>
+<p>IP数据报格式：</p>
+<p><img src="C:\Users\DB\AppData\Roaming\Typora\typora-user-images\image-20211208102512142.png" srcset="/img/loading.gif" lazyload alt="image-20211208102512142"></p>
+<h3 id="4-数据链路层"><a href="#4-数据链路层" class="headerlink" title="4.数据链路层"></a>4.数据链路层</h3><p>数据链路层主要任务是将从网络层接收到的数据报分割成特定的可被物理层传输的帧，在相邻两个节点间传送。此外还有查错功能，制定MAC方法等。</p>
+<p>数据链路层的协议主要有ARP和RARP</p>
+<h3 id="5-物理层"><a href="#5-物理层" class="headerlink" title="5.物理层"></a>5.物理层</h3><p>物理层的作用是实现计算机之间比特流的透明传输，尽可能屏蔽掉具体传输介质和物理设备的差异。</p>
+<h2 id="2-TCP-三次握手和四次挥手"><a href="#2-TCP-三次握手和四次挥手" class="headerlink" title="2. TCP 三次握手和四次挥手"></a>2. TCP 三次握手和四次挥手</h2><h3 id="2-1三次握手"><a href="#2-1三次握手" class="headerlink" title="2.1三次握手"></a>2.1三次握手</h3><p>三次握手是为了建立连接，双方进行接收和发送数据</p>
+<p>请求标识SYN，确认标识ACK</p>
+<p>序列号seq（发出的）（随机生成） 防止被别人模拟</p>
+<p>序列号ack（回复的）</p>
+<p><img src="C:\Users\DB\AppData\Roaming\Typora\typora-user-images\image-20211207233006874.png" srcset="/img/loading.gif" lazyload alt="image-20211207233006874"></p>
+<p><img src="C:\Users\DB\AppData\Roaming\Typora\typora-user-images\image-20211207230155247.png" srcset="/img/loading.gif" lazyload alt="image-20211207230155247"></p>
+<p>问：第2次握手传回了ack，为什么还要传syn？</p>
+<p>答：回传 SYN 则是为了建立并确认从服务端到客户端的通信。</p>
+<p>问：为什么一定要三次握手？</p>
+<p>答：因为第一次握手客户端什么确认不了，服务端确认了对方发生正常，自己接收正常；第二次握手客户端确认了自己和对方接收发送都正常；第三次服务端确认了自己发送正常。所以三次握手就是为了确认双方接收和发送功能都正常，缺一不可。</p>
+<h3 id="2-2四次挥手"><a href="#2-2四次挥手" class="headerlink" title="2.2四次挥手"></a>2.2四次挥手</h3><p>四次挥手是为了断开连接</p>
+<p><img src="C:\Users\DB\AppData\Roaming\Typora\typora-user-images\image-20211207234204710.png" srcset="/img/loading.gif" lazyload alt="image-20211207234204710"></p>
+<h2 id="3-TCP如何保证可靠传输"><a href="#3-TCP如何保证可靠传输" class="headerlink" title="3. TCP如何保证可靠传输"></a>3. TCP如何保证可靠传输</h2><p>1.首先应用数据被分割成tcp认为最合适发送的数据块</p>
+<p>2.tcp给发送的每个包进行编号，接收方可以通过对数据报编号进行排序，把有序数据传送给应用层</p>
+<p>3.校验和，tcp使用了校验和，目的是为了发现tcp首部和数据在端到端之间发生的任何改动，如果接收方检测到校验和有差错。则丢弃这个报文段和不确认收到此报文段。</p>
+<p>4.tcp的接收端会丢弃收到的重复数据</p>
+<p>5.流量控制，tcp使用的流量控制协议是可变大小的滑动窗口协议，tcp连接的一方都有固定大小的缓存空间，接收端只允许发送端发送自己缓冲区能接纳的数据。当接收方来不及处理发送方的数据时，能提示发送方降低发送速率，防止包丢失。</p>
+<p>6.拥塞控制，当网络拥塞时，减少数据的发送。拥塞控制方法有：慢开始，拥塞避免，快重传与快恢复</p>
+<p>7.ARQ协议，每发完一个分组就停止发送，等待对方确认，在收到确认后再发下一个分组。</p>
+<p>8.超时重传，tcp发出一个报文段后，启动一个定时器，等待确认接收端收到这个报文段，如果不能及时收到确认，将重发这个报文段。</p>
+<h2 id="4-访问一个网站页面时，显示主页的过程"><a href="#4-访问一个网站页面时，显示主页的过程" class="headerlink" title="4. 访问一个网站页面时，显示主页的过程"></a>4. 访问一个网站页面时，显示主页的过程</h2><ol>
+<li>DNS 解析</li>
+<li>TCP 连接</li>
+<li>发送 HTTP 请求</li>
+<li>服务器处理请求并返回 HTTP 报文</li>
+<li>浏览器解析渲染页面</li>
+<li>连接结束</li>
+</ol>
+<p><img src="https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-11/url%E8%BE%93%E5%85%A5%E5%88%B0%E5%B1%95%E7%A4%BA%E5%87%BA%E6%9D%A5%E7%9A%84%E8%BF%87%E7%A8%8B.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h2 id="5-状态码"><a href="#5-状态码" class="headerlink" title="5. 状态码"></a>5. 状态码</h2><p><img src="https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019/7/%E7%8A%B6%E6%80%81%E7%A0%81.png" srcset="/img/loading.gif" lazyload alt="状态码"></p>
+<h2 id="6-HTTP长连接和短连接"><a href="#6-HTTP长连接和短连接" class="headerlink" title="6. HTTP长连接和短连接"></a>6. HTTP长连接和短连接</h2><p>在HTTP/1.0中默认使用短连接，也就是说，客户端和服务端每进行一次HTTP操作，就建立一次连接，任务结束就中断连接。</p>
+<p>从HTTP/1.1开始，默认使用长连接，（在响应头加入：Connection：keep-alive）当一个网页打开完成后，客户端与服务端之间用于传输HTTP数据的TCP链接不会关闭，客户端再次访问这个服务器时，会继续使用这一条已经建立的连接。</p>
+<h2 id="7-HTTP是不保存状态的协议，如何保存用户状态呢"><a href="#7-HTTP是不保存状态的协议，如何保存用户状态呢" class="headerlink" title="7. HTTP是不保存状态的协议，如何保存用户状态呢"></a>7. HTTP是不保存状态的协议，如何保存用户状态呢</h2><p>HTTP是无状态协议，服务端给特定的用户创建特定的Session之后就可以表示这个用户的并且跟踪这个用户了。</p>
+<p>Session机制的主要作用就是通过服务端记录用户的状态。</p>
+<p>保存Session的方法</p>
+<p>实现Session跟踪是通过在Cookie中附加一个Session ID的方式。如果Cookie被禁用，就利用url重写把Session ID直接附加在url后面。</p>
+<h2 id="8-Cookie和Session的作用"><a href="#8-Cookie和Session的作用" class="headerlink" title="8.Cookie和Session的作用"></a>8.Cookie和Session的作用</h2><p>Cookie 一般用来保存用户信息，Session 主要是通过服务端记录用户的状态。</p>
+<p>Cookie 数据保存在客户端（浏览器端），Session数据保存在服务器端。</p>
+<h2 id="9-URI和RIL区别"><a href="#9-URI和RIL区别" class="headerlink" title="9.URI和RIL区别"></a>9.URI和RIL区别</h2><p>URI是统一资源标志符，可以唯一标识一个资源</p>
+<p>URL是统一资源定位符，可以提供该资源的路径，是一种具体的URI，即既可以标识一个资源还指明了该资源位置。</p>
+<p>URI像身份证，URL就是身份证上的家庭住址。</p>
+<h2 id="10-HTTP和HTTPS的区别"><a href="#10-HTTP和HTTPS的区别" class="headerlink" title="10.HTTP和HTTPS的区别"></a>10.HTTP和HTTPS的区别</h2><p>端口：HTTP的url以”http://“开始且默认使用80端口，而HTTPS的url是以”https://“开始且默认端口号是443。</p>
+<p>安全性和资源消耗上：HTTP协议运行在TCP上，所有传输的内容是明文，客户端和服务端都无法校验对方身份。</p>
+<p>而HTTPS是运行在SSL/TLS上的HTTP协议，SSL/TLS运行在TCP上，所有传输内容都经过了加密。</p>
+<p>所以HTTP没有HTTPS安全，但是HTTPS会耗费更多的服务器资源。    </p>
 
             </div>
             <hr>
@@ -259,7 +314,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/11/20/idea%E4%BD%BF%E7%94%A8test%E6%B3%A8%E8%A7%A3/">
+                      <a href="/2021/12/11/%E6%95%B0%E6%8D%AE%E5%BA%93/">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
@@ -269,8 +324,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/11/11/%E6%8E%92%E5%BA%8F%20-%20%E5%85%AB%E5%A4%A7%E6%8E%92%E5%BA%8F/">
-                        <span class="hidden-mobile">排序 - 八大排序</span>
+                      <a href="/2021/12/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
